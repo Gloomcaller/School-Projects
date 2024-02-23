@@ -12,6 +12,6 @@ If you'd like to contribute, feel free to fork this repository, make your change
 
 ## License
 
-There is no licence since i remove any elements that could link/lead to my school.
+There is no licence since I remove any elements that could link/lead to my school.
 
 Feel free to explore the projects and contribute! Happy coding!
