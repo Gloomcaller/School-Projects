@@ -23,7 +23,7 @@ Below is a list of some key projects included in this repository:
 2. **Pure HTML Website Project**
    - Description: We were given a project that needed to make and deploy a website using only HTML.
    - Technologies: HTML.
-   - [View Project](.HTML%20Website%20Project)
+   - [View Project](./HTML%20Website%20Project)
 
 ## Usage
 
