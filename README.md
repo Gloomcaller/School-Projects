@@ -41,5 +41,3 @@ While this repository primarily serves as a personal portfolio, contributions ar
 ## Contact
 
 If you have any questions or comments, please feel free to reach out via GitHub.
-
-Feel free to explore the projects. Happy coding!
