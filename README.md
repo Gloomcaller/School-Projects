@@ -13,7 +13,7 @@ Below is a list of some key projects included in this repository:
 1. **C# Array Project**
    - Description: This is the first project we ever did at my university while we grasp the core concepts of C#. 
    - Technologies: C#.
-   - [View Project](.CSharp Array Project)
+   - [View Project](./CSharp%20Array%20Project)
 
 2. **C# Sushi Project**
    - Description: This was an open topic project aimed at expanding our C# knowlage to Object Oriented level.
@@ -23,7 +23,7 @@ Below is a list of some key projects included in this repository:
 2. **Pure HTML Website Project**
    - Description: We were given a project that needed to make and deploy a website using only HTML.
    - Technologies: HTML.
-   - [View Project](.HTML Website Project)
+   - [View Project](.HTML%20Website%20Project)
 
 ## Usage
 
