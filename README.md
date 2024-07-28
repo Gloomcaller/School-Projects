@@ -1,13 +1,45 @@
 # School Projects
 
-Welcome to my repository for school projects! This repository contains a collection of projects completed during my time in school. Explore the diverse range of work undertaken during my time at school.
+Welcome to my repository for school projects! This repository showcases a collection of projects completed during my academic journey. Each project demonstrates different skills and concepts learned during my coursework.
+
+## Overview
+
+This repository serves as a portfolio of my school projects. Each project is organized in its own directory, containing source code, documentation, and any other relevant materials. The projects cover a variety of subjects and technologies, reflecting the diverse coursework undertaken.
+
+## Projects
+
+Below is a list of some key projects included in this repository:
+
+1. **C# Array Project**
+   - Description: This is the first project we ever did at my university while we grasp the core concepts of C#. 
+   - Technologies: C#.
+   - [View Project](./Project-Directory-1)
+
+2. **C# Sushi Project**
+   - Description: This was an open topic project aimed at expanding our C# knowlage to Object Oriented level.
+   - Technologies: C#.
+   - [View Project](./Project-Directory-2)
+
+2. **Pure HTML Website Project**
+   - Description: We were given a project that needed to make and deploy a website using only HTML.
+   - Technologies: HTML.
+   - [View Project](./Project-Directory-3)
 
 ## Usage
 
-Each project is stored in its own directory. Navigate to the respective directory to view the project files and documentation.
+To explore a project, navigate to the respective directory. Each directory contains:
 
-## License
+- **Source Code**: The main code files for the project.
+- **Resources**: Additional files such as images, data sets, or other media used in the project.
 
-There is no licence since I remove any elements that could link/lead to my school.
+Feel free to browse through the projects, examine the code, and learn from the various implementations.
+
+## Contributing
+
+While this repository primarily serves as a personal portfolio, contributions are welcome! If you'd like to suggest improvements or collaborate on any project, please feel free to fork the repository, make your changes, and submit a pull request.
+
+## Contact
+
+If you have any questions or comments, please feel free to reach out via GitHub.
 
 Feel free to explore the projects. Happy coding!
