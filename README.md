@@ -18,7 +18,7 @@ Below is a list of some key projects included in this repository:
 2. **C# Sushi Project**
    - Description: An open-topic project aimed at expanding our C# knowledge to include object-oriented programming concepts.
    - Technologies: C#.
-   - [View Project](./C#%20Sushi%20Project)
+   - [View Project](./C%23%20Sushi%20Project)
 
 3. **Pure HTML Website Project**
    - Description: A project that required creating and deploying a website using only HTML.
