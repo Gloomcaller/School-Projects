@@ -25,6 +25,11 @@ Below is a list of some key projects included in this repository:
    - Technologies: HTML.
    - [View Project](./HTML%20Website%20Project)
 
+4. **CSS Documentation Page Project**
+   - Description: Simple single page website aimed at learning basic CSS.
+   - Technologies: HTML, CSS.
+   - [View Project](./Documentation%20Page%20Project)
+
 ## Usage
 
 To explore a project, navigate to the respective directory. Each directory contains:
