@@ -1,14 +1,14 @@
 # School Projects
 
-Welcome to my repository for school projects! This repository showcases a collection of projects completed during my academic journey. Each project demonstrates different skills and concepts learned during my coursework.
+Welcome to my repository for school projects! This repository showcases a collection of projects completed during my academic journey. Each project demonstrates different project assignments I had to do during my time at University.
 
 ## Overview
 
-This repository serves as a portfolio of my school projects. Each project is organized in its own directory, containing source code, documentation, and any other relevant materials. The projects cover a variety of subjects and technologies, reflecting the diverse coursework undertaken.
+This repository serves as a storage of my school projects. Each project is organized in its own directory, containing source code, documentation, and any other relevant materials.
 
 ## Projects
 
-Below is a list of some key projects included in this repository:
+Below is a list of projects included in this repository:
 
 1. **C# Array Project**
    - Description: This was the first project we completed at my university, designed to help us grasp the core concepts of C#.
@@ -38,10 +38,6 @@ To explore a project, navigate to the respective directory. Each directory conta
 - **Resources**: Additional files such as images, data sets, or other media used in the project.
 
 Feel free to browse through the projects, examine the code, and learn from the various implementations.
-
-## Contributing
-
-While this repository primarily serves as a personal portfolio, contributions are welcome! If you'd like to suggest improvements or collaborate on any project, please feel free to fork the repository, make your changes, and submit a pull request.
 
 ## Contact
 
