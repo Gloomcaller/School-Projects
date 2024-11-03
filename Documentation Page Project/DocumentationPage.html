@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="DocumentationPage.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Technical Documentation</header>
+        <ul>
+            <li><a href="#introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#getting_started" class="nav-link">Getting Started</a></li>
+            <li><a href="#basic_usage" class="nav-link">Basic Usage</a></li>
+            <li><a href="#advanced_features" class="nav-link">Advanced Features</a></li>
+            <li><a href="#api_reference" class="nav-link">API Reference</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <p>This documentation provides an overview of the functionalities and usage guidelines for our software
+                tool. It is designed to help developers and users understand the tool's capabilities, installation
+                process, and various use cases.</p>
+            <p>The tool is built to be flexible and customizable, allowing users to tailor it to their specific needs
+                with ease.</p>
+            <code>npm install my-tool</code>
+            <p>We hope this documentation is helpful and answers any questions you may have about the software.</p>
+        </section>
+
+        <section class="main-section" id="getting_started">
+            <header>Getting Started</header>
+            <p>To begin, install the tool using the package manager of your choice. Once installed, you can initiate the
+                setup by running the following command:</p>
+            <code>my-tool init</code>
+            <p>This command creates the necessary configuration files in your project directory.</p>
+            <ul>
+                <li>Ensure you have Node.js installed.</li>
+                <li>Run the command in the root of your project.</li>
+                <li>Follow the on-screen prompts to complete the setup.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="basic_usage">
+            <header>Basic Usage</header>
+            <p>After installation, basic usage involves running the tool with default settings:</p>
+            <code>my-tool run</code>
+            <p>This command starts the tool in your current environment with default settings.</p>
+            <p>Here are some of the basic operations:</p>
+            <ul>
+                <li>Run <code>my-tool build</code> to compile the project.</li>
+                <li>Use <code>my-tool serve</code> to start a local server.</li>
+                <li>Type <code>my-tool help</code> for a list of commands.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="advanced_features">
+            <header>Advanced Features</header>
+            <p>The tool also offers several advanced features that enhance productivity:</p>
+            <p>Feature 1: Customizable Configurations. Modify the <code>config.json</code> file to override default
+                settings.</p>
+            <code>my-tool --config custom-config.json</code>
+            <p>Feature 2: Automation with Scripts. You can automate tasks using predefined scripts.</p>
+            <ul>
+                <li>Create scripts in the <code>scripts</code> folder.</li>
+                <li>Run a script using <code>my-tool run-script [script-name]</code>.</li>
+                <li>Customize your workflow with the provided templates.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="api_reference">
+            <header>API Reference</header>
+            <p>This section covers the API for interacting with the tool programmatically.</p>
+            <p><strong>initialize()</strong>: Initializes the tool in the current environment.</p>
+            <code>initialize(config)</code>
+            <p><strong>build()</strong>: Compiles the project and outputs files to the <code>/dist</code> folder.</p>
+            <code>build(options)</code>
+            <p><strong>serve()</strong>: Starts a local development server.</p>
+            <code>serve(port)</code>
+        </section>
+    </main>
+</body>
+
+</html>
