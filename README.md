@@ -25,6 +25,11 @@ Below is a list of projects included in this repository:
    - Technologies: HTML.
    - [View Project](./HTML%20Website%20Project)
 
+4. **CSS Deck List Website Project**
+   - Description: Project requiring css flex box and responsive design, also deploying a website using GitPages.
+   - Technologies: HTML, CSS.
+   - [View Project](./CSS%20Deck%20List%20Website%20Project)
+
 ## Usage
 
 To explore a project, navigate to the respective directory. Each directory contains:
