@@ -1,0 +1,353 @@
+@font-face {
+    font-family: 'NavFont';
+    src: url('./Fonts/MagicMedieval.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'TextFont';
+    src: url('./Fonts/Planewalker.ttf') format('woff2');
+}
+
+body {
+    font-family: 'TextFont', Arial, sans-serif;
+    background: url('./Media/Decor/background.jpg') fixed center/cover no-repeat;
+    color: wheat;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2e2e2e;
+    color: wheat;
+    padding: 10px;
+    box-shadow: 0px 4px 6px black;
+    position: sticky;
+    top: 10px;
+    text-align: center;
+    border: 3px solid darkgreen;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 90%;
+}
+
+header h1 {
+    font-family: 'NavFont', Arial, sans-serif;
+    font-size: 2.5rem;
+    margin: 5px 0;
+    text-shadow: 2px 2px 5px black;
+}
+
+.orber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 20px 0 0 0;
+    padding: 0;
+    justify-content: center;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+    background-color: #2e2e2e;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.nav-menu li {
+    border-right: 1px solid darkgreen;
+}
+
+.nav-menu li:last-child {
+    border-right: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: wheat;
+    font-family: 'NavFont', Arial, sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-menu .active {
+    color: wheat;
+    background-color: darkgreen;
+}
+
+.nav-menu a:hover {
+    color: #2e2e2e;
+    background-color: wheat;
+    transform: scale(1.1);
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.featured {
+    font-size: x-large;
+    font-family: 'NavFont', Arial, sans-serif;
+    text-shadow: 2px 2px 5px black;
+    margin: 10px 0;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: wheat;
+    transition: color 0.3s, transform 0.2s;
+}
+
+a:hover {
+    color: darkgreen;
+    transform: scale(1.1);
+}
+
+.info-box {
+    border: 3px solid darkgreen;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 90%;
+    border-radius: 10px;
+    background-color: #2e2e2ecc;
+}
+
+.info-box p,
+ul {
+    font-family: 'TextFont', Arial, sans-serif;
+    font-size: large;
+    line-height: 1.5;
+    list-style-type: none;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-content: center;
+}
+
+.card-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card:hover {
+    animation: greenglow 2s infinite alternate;
+}
+
+.card {
+    display: flex;
+    background-color: #2e2e2ecc;
+    color: wheat;
+    border: 2px solid darkgreen;
+    border-radius: 12px;
+    overflow: hidden;
+    width: calc(33.333% - 20px);
+    box-shadow: 0px 4px 6px black;
+    margin: 0 auto;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border-right: 2px solid darkgreen;
+}
+
+.card-info {
+    padding: 10px;
+    width: 60%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-info h3 {
+    font-family: 'NavFont', Arial, sans-serif;
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+}
+
+.card-info p {
+    font-family: 'TextFont', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.divimg {
+    width: 40%;
+    height: auto;
+    display: block;
+    border-right: 2px solid darkgreen;
+}
+
+.lembas {
+    background: url('./Media/Cards/Artifacts/Lembas.png');
+    background-size: cover;
+}
+
+.lembas:hover {
+    background: url('./Media/Cards/Tokens/Food.png');
+    background-size: cover;
+}
+
+.sepulcher {
+    background: url('./Media/Cards/Artifacts/Tithing Blade.png');
+    background-size: cover;
+}
+
+.sepulcher:hover {
+    background: url('./Media/Cards/Tokens/Consuming Sepulcher.png');
+    background-size: cover;
+}
+
+.rose {
+    background: url('./Media/Cards/Creatures/Thorn of the Black Rose.png');
+    background-size: cover;
+}
+
+.rose:hover {
+    background: url('./Media/Cards/Tokens/The Monarch.png');
+    background-size: cover;
+}
+
+.hunter {
+    background: url('./Media/Cards/Creatures/Avenging Hunter.png');
+    background-size: cover;
+}
+
+.hunter:hover {
+    background: url('./Media/Cards/Tokens/Undercity.png');
+    background-size: cover;
+}
+
+.dispute {
+    background: url('./Media/Cards/Spells/Deadly Dispute.png');
+    background-size: cover;
+}
+
+.dispute:hover {
+    background: url('./Media/Cards/Tokens/Treasure.png');
+    background-size: cover;
+}
+
+.garden {
+    background: url('./Media/Cards/Lands/Khalni Garden.png');
+    background-size: cover;
+}
+
+.garden:hover {
+    background: url('./Media/Cards/Tokens/Plant.png');
+    background-size: cover;
+}
+
+.contact-form {
+    border: 3px solid darkgreen;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    background-color: #2e2e2ee6;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    color: black;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #ffffffcc;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+}
+
+.contact-form button:hover {
+    background-color: darkgreen;
+}
+
+.deck-table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.deck-table th,
+.deck-table td {
+    border: 1px solid darkgreen;
+    padding: 8px 12px;
+    text-align: left;
+    font-size: larger;
+    background-color: #2e2e2e;
+    color: wheat;
+}
+
+.deck-table th:first-child,
+.deck-table td:first-child {
+    width: 70%;
+}
+
+.deck-table th:last-child,
+.deck-table td:last-child {
+    width: 30%;
+}
+
+.orb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: -0.5%;
+    background: linear-gradient(135deg, black, darkgreen);
+    box-shadow: 0 0 10px 5px #00ff0099;
+    animation: greenglow 2s infinite alternate, spin 5s infinite linear;
+}
+
+.orb-left {
+    margin-right: 50px;
+}
+
+.orb-right {
+    margin-left: 50px;
+}
+
+@keyframes greenglow {
+    from {
+        box-shadow: 0 0 10px 5px #00ff0099;
+    }
+
+    to {
+        box-shadow: 0 0 20px 10px #00ff00e6;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
