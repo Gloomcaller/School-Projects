@@ -33,7 +33,7 @@ Below is a list of projects included in this repository:
 5. **SQL ARP Database Project**
    - Description: SQL project aimed at learning about Database Structires, SQL, MySQL and all things Databse related like ER Diagrams and Relational Models.
    - Technologies: SQL.
-   - [View Project](./SQL%20ARP%20Database%20Project)
+   - [View Project](./SQL%20ARP%20Database)
 
 ## Usage
 
