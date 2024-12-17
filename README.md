@@ -30,6 +30,11 @@ Below is a list of projects included in this repository:
    - Technologies: HTML, CSS.
    - [View Project](./CSS%20Deck%20List%20Website%20Project)
 
+5. **SQL ARP Database Project**
+   - Description: SQL project aimed at learning about Database Structires, SQL, MySQL and all things Databse related like ER Diagrams and Relational Models.
+   - Technologies: SQL.
+   - [View Project](./SQL%20ARP%20Database%20Project)
+
 ## Usage
 
 To explore a project, navigate to the respective directory. Each directory contains:
