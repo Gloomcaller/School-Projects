@@ -1,67 +1,97 @@
-INSERT INTO Artifacts (Name, Description, Origin, YearDiscovered, SourceID) 
-VALUES ('Golden Chalice', 'A sacred chalice from medieval times.', 'Unknown', 1200, 1);
+insert into artifacts (
+   name,
+   description,
+   origin,
+   yeardiscovered,
+   sourceid
+) values ( 'Golden Chalice',
+           'A sacred chalice from medieval times.',
+           'Unknown',
+           1200,
+           1 );
 
-SELECT * 
-FROM Artifacts 
-WHERE YearDiscovered < 1500;
+select *
+  from artifacts
+ where yeardiscovered < 1500;
 
-UPDATE Custodians 
-SET RoleID = 3 
-WHERE CustodianID = 5;
+update custodians
+   set
+   roleid = 3
+ where custodianid = 5;
 
-DELETE FROM Artifacts 
-WHERE ArtifactID = 10;
+delete from artifacts
+ where artifactid = 10;
 
-DROP TABLE TestingRecords;
+drop table testingrecords;
 
-CREATE TABLE TestingRecords (
-    TestID INT AUTO_INCREMENT PRIMARY KEY,
-    Date DATE NOT NULL,
-    ArtifactID INT NOT NULL,
-    CustodianID INT NOT NULL,
-    TestType VARCHAR(100),
-    Result TEXT,
-    FOREIGN KEY (ArtifactID)
-        REFERENCES Artifacts (ArtifactID),
-    FOREIGN KEY (CustodianID)
-        REFERENCES Custodians (CustodianID)
+create table testingrecords (
+   testid      int,
+   auto_increment primary key,
+   date        date not null,
+   artifactid  int not null,
+   custodianid int not null,
+   testtype    varchar(100),
+   result      text,
+   foreign key ( artifactid )
+      references artifacts ( artifactid ),
+   foreign key ( custodianid )
+      references custodians ( custodianid )
 );
 
-SELECT AVG(YearDiscovered) AS AverageYear 
-FROM Artifacts;
+select avg(yeardiscovered) as averageyear
+  from artifacts;
 
-SELECT MAX(YearDiscovered) - MIN(YearDiscovered) AS YearDifference 
-FROM Artifacts;
+select max(yeardiscovered) - min(yeardiscovered) as yeardifference
+  from artifacts;
 
-SELECT SourceID, COUNT(*) AS ArtifactCount 
-FROM Artifacts 
-GROUP BY SourceID;
+select sourceid,
+       count(*) as artifactcount
+  from artifacts
+ group by sourceid;
 
-SELECT COUNT(*) AS TotalRecords 
-FROM MaintenanceRecords;
+select count(*) as totalrecords
+  from maintenancerecords;
 
-SELECT c.Name, r.Expertise 
-FROM Custodians c 
-JOIN Roles r ON c.RoleID = r.RoleID 
-ORDER BY r.Expertise;
+select c.name,
+       r.expertise
+  from custodians c
+  join roles r
+on c.roleid = r.roleid
+ order by r.expertise;
 
-SELECT s.Name AS SourceName, COUNT(a.ArtifactID) AS ArtifactCount 
-FROM Artifacts a 
-JOIN Sources s ON a.SourceID = s.SourceID 
-GROUP BY s.Name;
+select s.name as sourcename,
+       count(a.artifactid) as artifactcount
+  from artifacts a
+  join sources s
+on a.sourceid = s.sourceid
+ group by s.name;
 
-SELECT SourceID, COUNT(*) AS ArtifactCount 
-FROM Artifacts 
-GROUP BY SourceID 
-HAVING COUNT(*) > 1;
+select sourceid,
+       count(*) as artifactcount
+  from artifacts
+ group by sourceid
+having count(*) > 1;
 
-SELECT a.Name AS ArtifactName, c.Name AS CustodianName, r.Expertise 
-FROM Artifacts a 
-JOIN MaintenanceRecords m ON a.ArtifactID = m.ArtifactID 
-JOIN Custodians c ON m.CustodianID = c.CustodianID 
-JOIN Roles r ON c.RoleID = r.RoleID;
+select a.name as artifactname,
+       c.name as custodianname,
+       r.expertise
+  from artifacts a
+  join maintenancerecords m
+on a.artifactid = m.artifactid
+  join custodians c
+on m.custodianid = c.custodianid
+  join roles r
+on c.roleid = r.roleid;
 
-SELECT a.Name AS ArtifactName, 
-       (SELECT COUNT(*) FROM MaintenanceRecords WHERE ArtifactID = a.ArtifactID) AS MaintenanceCount,
-       (SELECT COUNT(*) FROM TestingRecords WHERE ArtifactID = a.ArtifactID) AS TestingCount
-FROM Artifacts a;
+select a.name as artifactname,
+       (
+          select count(*)
+            from maintenancerecords
+           where artifactid = a.artifactid
+       ) as maintenancecount,
+       (
+          select count(*)
+            from testingrecords
+           where artifactid = a.artifactid
+       ) as testingcount
+  from artifacts a;
