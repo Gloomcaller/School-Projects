@@ -1,66 +1,58 @@
-create table sources (
-   sourceid    int,
-   auto_increment primary key,
-   name        varchar(100) not null,
-   type        varchar(50),
-   contactinfo varchar(100)
+CREATE TABLE sources (
+    sourceid INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    type VARCHAR(50),
+    contactinfo VARCHAR(100)
 );
-create table departments (
-   departmentid int,
-   auto_increment primary key,
-   name         varchar(100) not null,
-   overseer     varchar(100) not null
+
+CREATE TABLE departments (
+    departmentid INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    overseer VARCHAR(100) NOT NULL
 );
-create table roles (
-   roleid    int,
-   auto_increment primary key,
-   rolename  varchar(100) not null,
-   expertise varchar(100)
+
+CREATE TABLE roles (
+    roleid INT AUTO_INCREMENT PRIMARY KEY,
+    rolename VARCHAR(100) NOT NULL,
+    expertise VARCHAR(100)
 );
-create table custodians (
-   custodianid  int,
-   auto_increment primary key,
-   name         varchar(100) not null,
-   roleid       int not null,
-   departmentid int not null,
-   foreign key ( roleid )
-      references roles ( roleid ),
-   foreign key ( departmentid )
-      references departments ( departmentid )
+
+CREATE TABLE custodians (
+    custodianid INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    roleid INT NOT NULL,
+    departmentid INT NOT NULL,
+    FOREIGN KEY (roleid) REFERENCES roles(roleid),
+    FOREIGN KEY (departmentid) REFERENCES departments(departmentid)
 );
-create table artifacts (
-   artifactid     int,
-   auto_increment primary key,
-   name           varchar(100) not null,
-   description    text,
-   origin         varchar(100),
-   yeardiscovered int,
-   sourceid       int not null,
-   foreign key ( sourceid )
-      references sources ( sourceid )
+
+CREATE TABLE artifacts (
+    artifactid INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT,
+    origin VARCHAR(100),
+    yeardiscovered INT,
+    sourceid INT NOT NULL,
+    FOREIGN KEY (sourceid) REFERENCES sources(sourceid)
 );
-create table maintenancerecords (
-   recordid          int,
-   auto_increment primary key,
-   date              date not null,
-   artifactcondition varchar(100),
-   artifactid        int not null,
-   custodianid       int not null,
-   foreign key ( artifactid )
-      references artifacts ( artifactid ),
-   foreign key ( custodianid )
-      references custodians ( custodianid )
+
+CREATE TABLE maintenancerecords (
+    recordid INT AUTO_INCREMENT PRIMARY KEY,
+    date DATE NOT NULL,
+    artifactcondition VARCHAR(100),
+    artifactid INT NOT NULL,
+    custodianid INT NOT NULL,
+    FOREIGN KEY (artifactid) REFERENCES artifacts(artifactid),
+    FOREIGN KEY (custodianid) REFERENCES custodians(custodianid)
 );
-create table testingrecords (
-   testid      int,
-   auto_increment primary key,
-   date        date not null,
-   artifactid  int not null,
-   custodianid int not null,
-   testtype    varchar(100),
-   result      text,
-   foreign key ( artifactid )
-      references artifacts ( artifactid ),
-   foreign key ( custodianid )
-      references custodians ( custodianid )
+
+CREATE TABLE testingrecords (
+    testid INT AUTO_INCREMENT PRIMARY KEY,
+    date DATE NOT NULL,
+    artifactid INT NOT NULL,
+    custodianid INT NOT NULL,
+    testtype VARCHAR(100),
+    result TEXT,
+    FOREIGN KEY (artifactid) REFERENCES artifacts(artifactid),
+    FOREIGN KEY (custodianid) REFERENCES custodians(custodianid)
 );
