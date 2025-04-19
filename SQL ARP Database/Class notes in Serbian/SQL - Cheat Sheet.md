@@ -1,5 +1,3 @@
-#SQL - cheat sheet
-
 ## 1. Kreiranje baze i tabele
 
 ### CREATE DATABASE
