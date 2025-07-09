@@ -42,7 +42,7 @@ To explore a project, navigate to the respective directory. Each directory conta
 - **Source Code**: The main code files for the project.
 - **Resources**: Additional files such as images, data sets, or other media used in the project.
 
-Feel free to browse through the projects, examine the code, and learn from the various implementations.
+Feel free to browse through the projects and examine the code.
 
 ## Contact
 
