@@ -15,7 +15,7 @@ Below is a list of projects included in this repository:
    - Technologies: C#.
    - [View Project](./CSharp%20Array%20Project)
 
-2. **C# Sushi Project**
+2. **C# OOP Project**
    - Description: An open-topic project aimed at expanding our C# knowledge to include object-oriented programming concepts.
    - Technologies: C#.
    - [View Project](./C%23%20Sushi%20Project)
@@ -25,15 +25,25 @@ Below is a list of projects included in this repository:
    - Technologies: HTML.
    - [View Project](./HTML%20Website%20Project)
 
-4. **CSS Deck List Website Project**
+4. **CSS Website Project**
    - Description: Project requiring css flex box and responsive design, also deploying a website using GitPages.
    - Technologies: HTML, CSS.
    - [View Project](./CSS%20Deck%20List%20Website%20Project)
 
-5. **SQL ARP Database Project**
+5. **SQL Database Project**
    - Description: SQL project aimed at learning about Database Structires, SQL, MySQL and all things Databse related like ER Diagrams and Relational Models.
    - Technologies: SQL.
    - [View Project](./SQL%20ARP%20Database)
+
+6. **ASP.NET Project**
+   - Description: ASP.NET project made to enhance understanding of MVC, Blazor Pages, C#, and web development using a framework.
+   - Technologies: HTML, CSS, SQL, C#, MVC, ASP.NET.
+   - [View Project](https://github.com/Gloomcaller/Winterhold-College-Course-Registration-System)
+
+7. **PHP Full Stack Project**
+   - Description: Pure PHP project that thought us about PHP and HTTPS in web development.
+   - Technologies: HTML, CSS, SQL, PHP.
+   - [View Project](https://github.com/Gloomcaller/TeaKeeper)
 
 ## Usage
 
