@@ -10,40 +10,55 @@ This repository serves as a storage of my school projects. Each project is organ
 
 Below is a list of projects included in this repository:
 
-1. **C# Array Project**
+01. **C# Array Project**
    - Description: This was the first project we completed at my university, designed to help us grasp the core concepts of C#.
    - Technologies: C#.
    - [View Project](./CSharp%20Array%20Project)
 
-2. **C# OOP Project**
+02. **C# OOP Project**
    - Description: An open-topic project aimed at expanding our C# knowledge to include object-oriented programming concepts.
    - Technologies: C#.
    - [View Project](./C%23%20Sushi%20Project)
 
-3. **Pure HTML Website Project**
+03. **Pure HTML Website Project**
    - Description: A project that required creating and deploying a website using only HTML.
    - Technologies: HTML.
    - [View Project](./HTML%20Website%20Project)
 
-4. **CSS Website Project**
+04. **CSS Website Project**
    - Description: Project requiring css flex box and responsive design, also deploying a website using GitPages.
    - Technologies: HTML, CSS.
    - [View Project](./CSS%20Deck%20List%20Website%20Project)
 
-5. **SQL Database Project**
+05. **SQL Database Project**
    - Description: SQL project aimed at learning about Database Structires, SQL, MySQL and all things Databse related like ER Diagrams and Relational Models.
    - Technologies: SQL.
    - [View Project](./SQL%20ARP%20Database)
 
-6. **ASP.NET Project**
+06. **ASP.NET Project**
    - Description: ASP.NET project made to enhance understanding of MVC, Blazor Pages, C#, and web development using a framework.
    - Technologies: HTML, CSS, SQL, C#, MVC, ASP.NET.
    - [View Project](https://github.com/Gloomcaller/Winterhold-College-Course-Registration-System)
 
-7. **PHP Full Stack Project**
+07. **PHP Full Stack Project**
    - Description: Pure PHP project that thought us about PHP and HTTPS in web development.
    - Technologies: HTML, CSS, SQL, PHP.
    - [View Project](https://github.com/Gloomcaller/TeaKeeper)
+
+08. **R Simulation Project**
+   - Description: Lightweight R application simulating disease outbreaks using the classic SIR compartmental model with interactive parameters and epidemic curve visualization.
+   - Technologies: R.
+   - [View Project](https://github.com/Gloomcaller/SIR-Epidemic-Simulator)
+
+09. **Terminal Python Project**
+   - Description: Educational tool demonstrating genetic algorithms through real‑time password evolution with color‑coded terminal visualization.
+   - Technologies: Python.
+   - [View Project](https://github.com/Gloomcaller/Genetic-Password-Cracker)
+
+10. **SASS Chatbot**
+   - Description: Interactive android service center chatbot that diagnoses hardware issues and recommends upgrades. Built with a state-machine conversation flow and SASS dynamic styling.
+   - Technologies: HTML, SASS, JavaScript, JSON.
+   - [View Project](https://github.com/Gloomcaller/Limbs-and-Circuits)
 
 ## Usage
 
